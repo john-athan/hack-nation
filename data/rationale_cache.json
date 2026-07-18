@@ -1,0 +1,106 @@
+{
+  "rationales": [
+    {
+      "genome_id": "1079901.3",
+      "antibiotic": "ampicillin",
+      "call": "resistant",
+      "evidence_category": "known_gene",
+      "supporting_genes": [
+        "blaSHV-2A",
+        "blaTEM-1"
+      ],
+      "text": "The prediction is resistant to ampicillin because known resistance determinants were detected: blaSHV-2A and blaTEM-1. This is decision support, not a diagnosis; results need laboratory confirmation."
+    },
+    {
+      "genome_id": "1079901.3",
+      "antibiotic": "ceftriaxone",
+      "call": "resistant",
+      "evidence_category": "known_gene",
+      "supporting_genes": [
+        "blaSHV-2A"
+      ],
+      "text": "The prediction is ceftriaxone resistant because the known resistance gene blaSHV-2A was detected, which is consistent with beta-lactam resistance. This is decision support, not a diagnosis; results need laboratory confirmation."
+    },
+    {
+      "genome_id": "1079901.3",
+      "antibiotic": "tetracycline",
+      "call": "resistant",
+      "evidence_category": "known_gene",
+      "supporting_genes": [
+        "tet(A)"
+      ],
+      "text": "The isolate is predicted to be resistant to tetracycline because the known resistance determinant tet(A) was detected. This is decision support only; laboratory confirmation is still needed."
+    },
+    {
+      "genome_id": "28901.24344",
+      "antibiotic": "ampicillin",
+      "call": "resistant",
+      "evidence_category": "known_gene",
+      "supporting_genes": [
+        "blaTEM-1"
+      ],
+      "text": "The prediction is ampicillin resistant, supported by detection of the known resistance gene blaTEM-1. This is decision support only and should be confirmed by laboratory testing."
+    },
+    {
+      "genome_id": "28901.24344",
+      "antibiotic": "ciprofloxacin",
+      "call": "resistant",
+      "evidence_category": "known_gene",
+      "supporting_genes": [
+        "gyrA_D87Y"
+      ],
+      "text": "The isolate is predicted resistant to ciprofloxacin because a known resistance determinant, gyrA_D87Y, was detected. This is decision support only and should be confirmed by standard laboratory methods."
+    },
+    {
+      "genome_id": "28901.24344",
+      "antibiotic": "nalidixic acid",
+      "call": "resistant",
+      "evidence_category": "known_gene",
+      "supporting_genes": [
+        "gyrA_D87Y"
+      ],
+      "text": "Nalidixic acid is predicted resistant, with the known resistance determinant gyrA_D87Y supporting this call. This is decision support only and should be confirmed by laboratory testing."
+    },
+    {
+      "genome_id": "28901.24344",
+      "antibiotic": "streptomycin",
+      "call": "resistant",
+      "evidence_category": "known_gene",
+      "supporting_genes": [
+        "aph(3'')-Ib",
+        "aph(6)-Id"
+      ],
+      "text": "The isolate is predicted to be resistant to streptomycin because known resistance determinants were detected: aph(3'')-Ib and aph(6)-Id. This is decision support, not a diagnosis; results need laboratory confirmation."
+    },
+    {
+      "genome_id": "28901.24344",
+      "antibiotic": "trimethoprim-sulfamethoxazole",
+      "call": "resistant",
+      "evidence_category": "known_gene",
+      "supporting_genes": [
+        "sul2"
+      ],
+      "text": "The tool predicts trimethoprim-sulfamethoxazole resistance, supported by detection of the known resistance gene sul2. This is decision support only and should be confirmed by laboratory testing."
+    },
+    {
+      "genome_id": "54388.377",
+      "antibiotic": "ciprofloxacin",
+      "call": "resistant",
+      "evidence_category": "known_gene",
+      "supporting_genes": [
+        "gyrA_S83F"
+      ],
+      "text": "The isolate is predicted to be ciprofloxacin resistant because the known resistance determinant gyrA_S83F was detected. This is decision support, not a diagnosis; results need laboratory confirmation."
+    },
+    {
+      "genome_id": "54388.377",
+      "antibiotic": "nalidixic acid",
+      "call": "resistant",
+      "evidence_category": "known_gene",
+      "supporting_genes": [
+        "gyrA_S83F"
+      ],
+      "text": "The prediction is resistant to nalidixic acid because the known resistance determinant gyrA_S83F was detected. This is decision support, and the result should be confirmed by laboratory testing."
+    }
+  ]
+}

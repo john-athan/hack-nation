@@ -1,0 +1,19 @@
+logs/
+DONE
+.ntfy_topic
+node_modules/
+__pycache__/
+.venv/
+.demo_phase
+data/
+# ...except the pre-baked demo rationale cache, which IS committed so a fresh clone
+# serves real gpt-5.4-mini phrasings offline with no key (see scripts/bake_rationales.py).
+!data/rationale_cache.json
+*.fna
+*.faa
+*.msh
+*.tsv
+.env
+.hack.env
+*.key
+amrfinder_out/

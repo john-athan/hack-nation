@@ -1,0 +1,12 @@
+# Streamlit Community Cloud deploy deps for the CACHED/public Genome Firewall demo.
+# Versions are pinned to the exact set that BUILT data/models.joblib on the box, so the pickle
+# unpickles and predicts identically on Streamlit Cloud (cp312). No bio tools (amrfinderplus /
+# mash / micromamba / BV-BRC) and no OpenAI key are present on Cloud; the public path is fully
+# cached and never shells out. openai is included only for the optional rationale flag, which
+# stays off without a key (its import is lazy, inside explain()).
+streamlit==1.59.2
+scikit-learn==1.9.0
+numpy==2.5.1
+pandas==3.0.3
+joblib==1.5.3
+openai==2.46.0

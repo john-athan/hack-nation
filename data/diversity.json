@@ -1,0 +1,8 @@
+{
+  "n_genomes": 5402,
+  "n_mlst": 320,
+  "n_serovars_named": 174,
+  "top_mlst_share": 0.1683,
+  "top_serovar": "Typhimurium",
+  "top_serovar_share": 0.1468
+}

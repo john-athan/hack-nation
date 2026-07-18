@@ -1,0 +1,46 @@
+[project]
+name = "genome-firewall"
+version = "0.1.0"
+description = "Genome Firewall — an honest AMR decision-support engine that proves what a genome can and cannot tell you."
+readme = "README.md"
+authors = [
+    { name = "Jonathan Kaleve", email = "jonathan.kaleve@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.5.1",
+    "pandas>=3.0.3",
+    "requests>=2.34.2",
+    "scikit-learn>=1.9.0",
+]
+
+[project.scripts]
+genome-firewall = "genome_firewall:main"
+
+[project.optional-dependencies]
+demo = [
+    "openai>=2.46.0",
+    "streamlit>=1.59.2",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.26,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.ruff]
+# Streamlit Community Cloud runs Python 3.12; the box runs 3.14 (which satisfies >=3.12). Pinning
+# ruff's target here stops `ruff format` inferring py314 from requires-python and RE-FLATTENING the
+# `except (A, B):` tuples back to PEP 758 `except A, B:` — a form that will not parse on 3.12/3.13.
+target-version = "py312"
+
+[tool.ty.environment]
+# demo/ modules (verdict.py, app.py) aren't an installed package; tests import them after a
+# sys.path insert, so ty needs demo/ on its search path to resolve `from verdict import ...`.
+extra-paths = ["demo"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.15.22",
+    "ty>=0.0.61",
+]

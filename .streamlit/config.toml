@@ -1,0 +1,20 @@
+# Genome Firewall demo — Streamlit runtime config (checked in so the stage launch is reproducible).
+# Streamlit reads $CWD/.streamlit/config.toml; the demo is launched from the repo root, so this
+# applies to `uv run --extra demo streamlit run demo/app.py` without any extra flags.
+
+[browser]
+# NO TELEMETRY (CLAUDE.md LOCAL-FIRST/PRIVACY doctrine). Streamlit phones usage stats home by
+# default — unacceptable for a defensive medical decision-support tool. Off, always.
+gatherUsageStats = false
+
+[server]
+# Headless: on a fresh box with no ~/.streamlit/credentials.toml, `streamlit run` in a TTY prints
+# the "Enter your email" welcome and BLOCKS on stdin — that would stall the very first stage
+# launch. Headless suppresses that prompt and the browser auto-open (we SSH to this box and open
+# the URL ourselves). This is the deploy-stability fix, not a preference.
+headless = true
+
+[client]
+# Minimal toolbar hides the dev-only "Deploy" button + hamburger menu — a clean stage UI a judge
+# can't wander into. Error details stay visible (default) so a real traceback is still diagnosable.
+toolbarMode = "minimal"

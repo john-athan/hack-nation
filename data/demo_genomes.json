@@ -1,0 +1,19 @@
+{
+  "genomes": [
+    {
+      "id": "1079901.3",
+      "beat": "known_gene",
+      "label": "① ESBL carrier: resistance via known genes (Hindmarsh)"
+    },
+    {
+      "id": "28901.24344",
+      "beat": "ood",
+      "label": "③ Firewall abstains: naive says azithromycin works (92%), firewall won't commit (Enteritidis)"
+    },
+    {
+      "id": "54388.377",
+      "beat": "qrdr",
+      "label": "④ gyrA S83F: one QRDR mutation; the knockout traces the ciprofloxacin + nalidixic acid resistance call to it (Paratyphi A)"
+    }
+  ]
+}
